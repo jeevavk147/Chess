@@ -9,6 +9,9 @@ import {
     PieceTypeInput
 } from 'ngx-chess-board';
 import { FenComponent } from './components/fen/fen.component';
+//import {Auth} from 'aws-amplify'
+
+
 
 @Component({
     selector: 'app-root',
@@ -160,5 +163,10 @@ export class AppComponent{
 
     getPGN() {
         alert(this.boardManager.getPGN());
+    }
+
+    async signout()
+    {
+
     }
 }
